@@ -1,0 +1,74 @@
+body {
+    padding: 30px;
+    border: 10px solid blue;
+    font-family: 'comic sans ms';
+    font-size: large;
+    background-color: aquamarine;
+    color: indigo;
+}
+
+h3 {
+    text-align: center;
+}
+
+p {
+    text-align: justify;
+}
+
+td {
+    padding-left: 40px;
+}
+
+.side_table {
+    width: 400px;
+    float: right;
+    margin-left: 30px;
+}
+
+.ordered {
+    color: cornsilk;
+    background-color: crimson;
+    height: 200px;
+    width: 50%;
+    overflow: hidden;
+
+}
+
+.unordered {
+    color: blue;
+    background-color: #D4E41B;
+    height: 150px;
+    overflow: scroll;
+    margin-top: 15px;
+
+}
+
+.detailslist {
+    color: red;
+    background-color: yellow;
+    height: 150px;
+    overflow: auto;
+    margin-top: 15px;
+    padding-left: 20px;
+
+}
+
+h1
+{
+    text-align: center;
+    font-size: 50px;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+nav
+{
+    background-color: red;
+    
+    border: 5px solid green; 
+}
+
+a{
+    margin-right: 10%;
+    
+}
