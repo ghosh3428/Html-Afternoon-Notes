@@ -69,6 +69,21 @@ nav
 }
 
 a{
-    margin-right: 10%;
-    
+ 
+}
+
+table
+{
+    border-collapse: collapse;
+}
+img
+{
+    width:24%;
+    height:30%;
+}
+
+iframe
+{
+    width:97%;
+    height:80%;
 }
