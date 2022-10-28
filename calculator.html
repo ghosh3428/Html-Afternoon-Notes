@@ -1,0 +1,117 @@
+<html>
+    <head>
+        <script>
+            var first  = 0;
+            var second = 0;
+            var operation = "";
+            function setData(data)
+            {
+                og = document.getElementById("data").value;
+                document.getElementById("data").value = og + data;
+            }
+
+            function delData()
+            {
+                document.getElementById("data").value = "";
+            }
+
+            function operator(data)
+            {
+                first = parseInt(document.getElementById("data").value);
+                operation = data;
+                document.getElementById("data").value = "";
+            }
+
+            function calculate()
+            {
+                second = parseInt(document.getElementById("data").value);
+
+                if(operation == '+')
+                {
+                    document.getElementById("data").value = first + second;
+                }
+                if(operation == '-')
+                {
+                    document.getElementById("data").value = first - second;
+                }
+                if(operation == '/')
+                {
+                    document.getElementById("data").value = parseInt(first / second);
+                }
+                if(operation == '*')
+                {
+                    document.getElementById("data").value = first * second;
+                }
+            }
+        </script>
+
+    </head>
+    <body>
+
+        <center>
+            <table>
+                <tr>
+                    <td colspan="4">
+                        <input type="text" id="data" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="setData(1)">1</button>
+                    </td>
+                    <td>
+                        <button onclick="setData(2)">2</button>
+                    </td>
+                    <td>
+                        <button onclick="setData(3)">3</button>
+                    </td>
+                    <td>
+                        <button onclick="operator('+')">add</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="setData(4)">4</button>
+                    </td>
+                    <td>
+                        <button onclick="setData(5)">5</button>
+                    </td>
+                    <td>
+                        <button onclick="setData(6)">6</button>
+                    </td>
+                    <td>
+                        <button onclick="operator('-')">sub</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="setData(7)">7</button>
+                    </td>
+                    <td>
+                        <button onclick="setData(8)">8</button>
+                    </td>
+                    <td>
+                        <button onclick="setData(9)">9</button>
+                    </td>
+                    <td>
+                        <button onclick="operator('/')">div</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button onclick="delData()">del</button>
+                    </td>
+                    <td>
+                        <button onclick="setData(0)">0</button>
+                    </td>
+                    <td>
+                        <button onclick="calculate()">equal</button>
+                    </td>
+                    <td>
+                        <button onclick="operator('*')">mul</button>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>

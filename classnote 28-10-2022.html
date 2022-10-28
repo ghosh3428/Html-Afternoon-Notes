@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <script>
+            function mEnter()
+            {
+                document.getElementById("para").style.backgroundColor="yellow";
+                document.getElementById("para").style.fontSize = 45;
+            }
+
+            function mClick()
+            {
+                document.getElementById("head").style.backgroundColor="green";
+                document.getElementById("head").style.fontSize = 65;
+            }
+            function mLeave()
+            {
+                document.getElementById("para").style.backgroundColor="aqua";
+                document.getElementById("para").style.color="crimson";
+                document.getElementById("para").style.fontSize=30;
+            }
+
+            function khtoms()
+            {
+                    var data = parseInt(document.getElementById("data").value);
+                    var ms = data *1000 / 3600;
+
+                    document.getElementById("para").innerHTML ="Speed in m/s is " +ms;
+                    document.getElementById("result").value = ms;
+                }
+
+        </script>
+
+        <style>
+            p
+            {
+                color:crimson;
+                font-size: 30;
+                background-color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 onclick="mClick()" id="head">Hello Sample</h1>
+
+       Enter Data <input type="text" id="data"/>
+        <p onmouseenter="mEnter()" onmouseleave="mLeave()" id="para" >
+            Sample Code
+        </p>
+        <button onclick="khtoms()">Km/Hr to M/s</button>Result <input type="text" id="result"/>
+
+    
+    </body>
+</html>
