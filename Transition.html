@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <style>
+        p {
+            font-size: 30px;
+            color: yellow;
+            background-color: red;
+            width: 50%;
+            height: 32%;
+
+            transition-property: all;
+            transition-duration: 5s;
+            transition-timing-function: ease-in;
+            transition-delay: 2s;
+        }
+
+        @keyframes myanimationstyle {
+            0% {
+                background-color: black;
+                
+            }
+
+            20% {
+                background-color: blue;
+                width:80%;
+            }
+
+            40% {
+                background-color: darkgreen;
+                height:60%;
+            }
+
+            60% {
+                background-color: darkslategray;
+                width:50%
+            }
+
+            80% {
+                background-color: darkred;
+                height:32%;
+            }
+
+            100% {
+                background-color: indigo;
+                width:50%;
+            }
+
+        }
+
+        .transition:hover {
+            font-size: 60px;
+            color: crimson;
+            width: 90%;
+            height: 60%;
+            background-color: blue;
+        }
+
+        .animation:hover {
+            animation-name: myanimationstyle;
+            animation-duration: 15s;
+            animation-delay: 2s;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <p class="transition">
+        NIIT Limited (National Institute of Information Technology) is an Indian multinational skills and talent
+        development corporation headquartered in Gurgaon, India.
+    </p>
+
+    <p class="animation">
+        The company was set up in 1981 to help the nascent IT
+        industry overcome its human resource challenges. NIIT offers training and development to individuals,
+        enterprises and institutions.
+    </p>
+</body>
+
+</html>
