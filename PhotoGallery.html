@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <link href="photogallerystyle.css" rel="stylesheet">
+    <script src="photogalleryscript.js"></script>
+    <style>
+        img {
+            height: 20%;
+            width: 20%;
+            padding: 2px;
+        }
+
+        .nav {
+            width: 100%;
+
+        }
+
+        .view {
+            float: right;
+            width: 78%;
+        }
+
+        .view img {
+            height: 82%;
+            width: 90%;
+        }
+
+        h1 {
+            text-align: center;
+            color: blue;
+            background-image: linear-gradient(to bottom right, red, yellow, green);
+        }
+    </style>
+    <script>
+        function change(source) {
+            target = document.getElementById("target");
+            target.src = source.src;
+        }
+    </script>
+
+</head>
+
+<body>
+    <H1>PHOTO GALLERY</H1>
+    <div>
+
+        <div class="view">
+            <img src="flower.jpg" id="target" />
+        </div>
+        <div class="nav">
+            <img src="flower.jpg" onclick="change(this)" />
+            <br />
+            <img src="nature.jpg" onclick="change(this)" />
+            <br />
+            <img src="space.jpg" onclick="change(this)" />
+            <br />
+            <img src="tree.jpg" onclick="change(this)" />
+        </div>
+    </div>
+
+</body>
+
+</html>
